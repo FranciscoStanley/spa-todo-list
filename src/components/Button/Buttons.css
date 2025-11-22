@@ -1,0 +1,81 @@
+.btn {
+  padding: 0 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: background-color 0.25s, transform 0.2s, box-shadow 0.25s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  min-width: 120px; /* largura padronizada */
+  height: 40px; /* altura padronizada */
+  box-sizing: border-box;
+}
+
+.actions .btn {
+  width: 120px; /* garante igual dentro do container */
+}
+
+.btn:focus-visible {
+  outline: 2px solid #1976d2;
+  outline-offset: 2px;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn--complete {
+  background: #4caf50;
+  color: #fff;
+}
+
+.btn--complete:hover {
+  background: #439c48;
+}
+
+.btn--edit {
+  background: #ff9800;
+  color: #fff;
+}
+
+.btn--edit:hover {
+  background: #e08900;
+}
+
+.btn--delete {
+  background: #f44336;
+  color: #fff;
+}
+
+.btn--delete:hover {
+  background: #e2362b;
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 680px) {
+  .btn,
+  .actions .btn {
+    min-width: 100px;
+    width: 100px;
+    height: 38px;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .btn {
+    padding: 7px 10px;
+    font-size: 0.75rem;
+  }
+}

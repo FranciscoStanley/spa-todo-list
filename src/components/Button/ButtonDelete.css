@@ -1,0 +1,83 @@
+.todo-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.todo-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.todo-item h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.todo-item p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.todo-category {
+  display: inline-block;
+  background-color: #e0e0e0;
+  color: #555;
+  font-size: 0.9rem;
+  padding: 3px 8px;
+  border-radius: 12px;
+  margin-top: 5px;
+}
+
+.todo-item-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.button-completed {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.button-completed:hover {
+  background-color: #45a049;
+}
+
+.button-delete {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.button-delete:hover {
+  background-color: #e53935;
+}
+
+.button-edit {
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.button-edit:hover {
+  background-color: #fb8c00;
+}
