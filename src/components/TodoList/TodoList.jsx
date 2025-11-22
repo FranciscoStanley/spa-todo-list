@@ -1,5 +1,5 @@
 import "./TodoList.css";
-import TodoItem from "./TodoItem";
+import TodoItem from "../TodoItem/TodoItem";
 import { useState } from "react";
 
 function TodoList({ todos, setTodos, setIsModalOpen }) {
